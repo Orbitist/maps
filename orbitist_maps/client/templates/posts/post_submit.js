@@ -4,7 +4,9 @@ Template.postSubmit.events({
 
     var post = {
       geojson: $(e.target).find('[name=geojson]').val(),
-      title: $(e.target).find('[name=title]').val()
+      title: $(e.target).find('[name=title]').val(),
+      tileLayer: $(e.target).find('[name=tileLayer]').val(),
+      marker: $(e.target).find('[name=marker]').val()
     };
 
     Meteor.call('postInsert', post, function(error, result) {

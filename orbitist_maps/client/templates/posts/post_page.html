@@ -15,7 +15,7 @@ var map = new L.Map('map', {
 });
 
 // Add an OpenStreetMap tile layer
-L.tileLayer('http://{s}.tiles.mapbox.com/v3/orbitist.e0829b40/{z}/{x}/{y}.png', {
+L.tileLayer('{{tileLayer}}', {
 	attribution: '&copy; <a href="http://mapbox.com">Mapbox</a>'
 }).addTo(map);
 </script>
@@ -26,7 +26,7 @@ var orbitistGeoJson = {{geojson}};
   
 // Markers are configured here:
 var orbitistIcon = L.icon({
- 	iconUrl: 'http://orbitist.s3.amazonaws.com/_toplevel/images/map-icons/orbitist-icon-blue.png',
+ 	iconUrl: '{{marker}}',
     iconSize:     [30, 30], // size of the icon
     iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
@@ -50,5 +50,5 @@ var bounds = L.geoJson(orbitistGeoJson, {
 
  map.fitBounds(bounds);
 </script>
-
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </template>

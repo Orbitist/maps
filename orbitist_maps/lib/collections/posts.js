@@ -8,7 +8,7 @@ Posts.allow({
 Posts.deny({
   update: function(userId, post, fieldNames) {
     // may only edit the following two fields:
-    return (_.without(fieldNames, 'geojson', 'title').length > 0);
+    return (_.without(fieldNames, 'geojson', 'title', 'tileLayer', 'marker').length > 0);
   }
 });
 
@@ -17,7 +17,9 @@ Meteor.methods({
     check(Meteor.userId(), String);
     check(postAttributes, {
       title: String,
-      geojson: String
+      geojson: String,
+      tileLayer: String,
+      marker: String
     });
     var user = Meteor.user();
     var post = _.extend(postAttributes, {

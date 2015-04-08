@@ -12,6 +12,28 @@
           <textarea name="geojson" id="geojson" type="text" value="" placeholder="Paste your GeoJSON here" class="form-control" rows="3"></textarea>
       </div>
     </div>
+    <div class="form-group">
+      <label class="control-label" for="tileLayer">Tile Layer</label>
+      <div class="controls">
+          <select name="tileLayer" id="tileLayer" type="text" value="" placeholder="--Choose a tile layer--" class="form-control">
+          	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.e0829b40/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Orbitist</option>
+          	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.l224oc04/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Light</option>
+          	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.l1o3234f/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Dark</option>
+          	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.if1em1bg/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Satellite</option>
+          	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.l3d32kbn/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Comic</option>
+          	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.l0op74ap/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Pirate</option>
+          </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="marker">Marker</label>
+      <div class="controls">
+          <select name="marker" id="marker" type="text" value="" placeholder="--Choose a marker--" class="form-control">
+          	<option value="http://orbitist.s3.amazonaws.com/_toplevel/images/map-icons/orbitist-icon-blue.png">Orbitist-blue</option>
+          	<option value="http://orbitist.s3.amazonaws.com/_toplevel/images/map-icons/orbitist-icon-orange.png">Orbitist-orange</option>
+          </select>
+      </div>
+    </div>
     <input type="submit" value="Submit" class="btn btn-primary"/>
   </form>
 </template>
