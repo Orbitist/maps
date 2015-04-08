@@ -5,7 +5,7 @@ Template.postEdit.events({
     var currentPostId = this._id;
 
     var postProperties = {
-      url: $(e.target).find('[name=url]').val(),
+      geojson: $(e.target).find('[name=geojson]').val(),
       title: $(e.target).find('[name=title]').val()
     }
 

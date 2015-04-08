@@ -3,7 +3,7 @@ Template.postSubmit.events({
     e.preventDefault();
 
     var post = {
-      url: $(e.target).find('[name=url]').val(),
+      geojson: $(e.target).find('[name=geojson]').val(),
       title: $(e.target).find('[name=title]').val()
     };
 

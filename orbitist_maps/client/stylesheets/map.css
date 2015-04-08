@@ -97,30 +97,6 @@ color: #eee;
 color: #fff;
 }
 
-
-/* Youtube videos */
-.popupbody .media-youtube-player {
-width:290px !important;
-height:175px !important;
-}
-
-/* Vimeo Videos */
-.popupbody .media-vimeo-player {
-width:290px !important;
-height:175px !important;
-}
-
-/* Markers */
-.leaflet-tagged-marker i {
-font-size: 35px;
-padding-top: 4px;
-}
-
-/* Carto DB adjustments */
-div.cartodb-timeslider .slider {
-max-width: 100% !important;
-}
-
 .oembed-title {
 display: none;
 }

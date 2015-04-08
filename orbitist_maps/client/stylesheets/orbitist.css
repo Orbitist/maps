@@ -48,7 +48,7 @@ margin-left: 5px;
 
 /** Back Button **/
 .back-btn {
-  font-size: 25px;
+  font-size: 25px !important;
   margin-top: 12px;
   margin-left: 5px;
 }
