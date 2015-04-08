@@ -1,0 +1,54 @@
+<template name="postPage">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/"><span class="fa fa-chevron-left back-btn"></span></a>
+			</div>
+		</div>
+	</nav>
+		<!-- map -->
+		<div class="map" id="map"></div>
+	
+<script>
+// Set lat/long where the map initiates and at what zoom level
+var map = new L.Map('map', {
+});
+
+// Add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tiles.mapbox.com/v3/orbitist.e0829b40/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="http://mapbox.com">Mapbox</a>'
+}).addTo(map);
+</script>
+		
+<script>
+// GeoJSON is pasted before the semi-colon below:
+var orbitistGeoJson = {{url}};
+  
+// Markers are configured here:
+var orbitistIcon = L.icon({
+ 	iconUrl: 'http://orbitist.s3.amazonaws.com/_toplevel/images/map-icons/orbitist-icon-blue.png',
+    iconSize:     [30, 30], // size of the icon
+    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
+    });
+  
+// ADVANCED: This tells the map what goes in popups.
+function orbitistPopup(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.name) {
+        layer.bindPopup(feature.properties.description, {closeButton: false});
+    }
+}
+
+// ADVANCED: This adds the markers to the map.
+var bounds = L.geoJson(orbitistGeoJson, {
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {icon: orbitistIcon});
+    },
+    onEachFeature: orbitistPopup
+}).addTo(map);
+
+ map.fitBounds(bounds);
+</script>
+
+</template>
