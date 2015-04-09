@@ -8,10 +8,6 @@ html, body, #map {
 height: 100%;
 }
 
-.map {
-margin-top: -10px;
-}
-
 a {
 color: rgba(30,93,129,0.8);
 }
@@ -97,6 +93,14 @@ color: #eee;
 color: #fff;
 }
 
+.leaflet-control-zoom {
+display: none;
+}
+
 .oembed-title {
+display: none;
+}
+
+.leaflet-control-attribution {
 display: none;
 }

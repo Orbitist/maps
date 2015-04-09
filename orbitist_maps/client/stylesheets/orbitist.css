@@ -48,7 +48,33 @@ margin-left: 5px;
 
 /** Back Button **/
 .back-btn {
-  font-size: 25px !important;
-  margin-top: 12px;
-  margin-left: 5px;
+position: fixed;
+top: 10px;
+left: 10px;
+font-size: 20px !important;
+z-index: 9;
+width: 36px;
+height: 36px;
+background-color: rgba(30,93,129,0.8);
+border-radius: 50%;
+border-color: rgba(241,194,137,0.8);
+padding-left: 9px;
+padding-top: 5px;
+-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.back-btn .fa {
+color: #eee;
+}
+
+.fullscreen-toggle {
+position: fixed;
+right: 10px;
+top: 10px;
+z-index: 40;
+}
+
+.fullscreen-toggle .btn-orbitist {
+background-color: rgba(241,194,137,0.95);
 }
