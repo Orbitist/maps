@@ -1,12 +1,8 @@
 <template name="header">
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="logo navbar-btn pull-left" href="/" title="Home">
-        			<img src="http://www.app.orbitist.com/sites/default/files/logo_blue_button_100.png" alt="Home" />
-      			</a>
-      			<a class="navbar-brand" href="{{pathFor 'postsList'}}">Orbitist Maps</a>
-			</div>
-		</div>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="orbitist-brand">
+      			<a class="center-block" href="{{pathFor 'postsList'}}">ORBITIST</a>
+		</div><!-- orbitist-brand -->
 	</nav>
+	<div style="margin-top:50px;"></div>
 </template>

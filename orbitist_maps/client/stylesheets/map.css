@@ -8,14 +8,6 @@ html, body, #map {
 height: 100%;
 }
 
-a {
-color: rgba(30,93,129,0.8);
-}
-
-a:hover {
-color: rgba(30,93,129,1);
-}
-
 /** Orbitist Buttons **/
 .btn-default {
 background-color: rgba(30,93,129,0.8);
