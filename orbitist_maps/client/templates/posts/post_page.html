@@ -1,5 +1,5 @@
 <template name="postPage">
-	<a href="/">
+	<a href="{{pathFor 'postsList'}}" data-transition-out="slideRightOut" data-transition-in="slideRightIn">
 		<div class="back-btn">
 			<span class="fa fa-chevron-left"></span>
 		</div>
@@ -30,7 +30,6 @@
 
 		<!-- map -->
 		<div class="map" id="map"></div>
-	
 <script>
 // Set lat/long where the map initiates and at what zoom level
 var map = new L.Map('map', {
@@ -50,8 +49,8 @@ var orbitistGeoJson = {{geojson}};
 var orbitistIcon = L.icon({
  	iconUrl: '{{marker}}',
     iconSize:     [30, 30], // size of the icon
-    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
+    iconAnchor:   [15, 30], // point of the icon which will correspond to marker's location
+    popupAnchor:  [1, -20] // point from which the popup should open relative to the iconAnchor
     });
   
 // ADVANCED: This tells the map what goes in popups.

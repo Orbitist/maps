@@ -2,6 +2,20 @@
 height: 75px;
 border-bottom-style: solid;
 border-bottom-width: 1px;
-border-color: rgba(30,93,129,1);
-background-color: rgba(241,194,137,1);
+border-color: #eee;
+}
+
+.post-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+	.container {
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+	}
 }
