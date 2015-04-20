@@ -170,3 +170,7 @@ color: #fff;
 .navbar .container {
 max-width: 1170px;
 }
+
+.hidden {
+display: none;
+}

@@ -37,4 +37,3 @@ if (Roles.userIsInRole(loggedInUser, 'admin')) {
 Router.onBeforeAction(requireLogin, {only: 'postSubmit'});
 
 Router.route('/user', {name: 'user'});
-

@@ -7,6 +7,7 @@ Template.postEdit.events({
     var postProperties = {
       title: $(e.target).find('[name=title]').val(),
       description: $(e.target).find('[name=description]').val(),
+      image: $(e.target).find('[name=image]').val(),
       geojson: $(e.target).find('[name=geojson]').val(),
       tileLayer: $(e.target).find('[name=tileLayer]').val(),
       marker: $(e.target).find('[name=marker]').val()
