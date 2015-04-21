@@ -1,14 +1,6 @@
 /** Top Level **/
-html {
-background: url(http://orbitist.s3.amazonaws.com/_toplevel/images/backgrounds/cover.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 body {
-background-color: rgba(0,0,0,0.4);
+background-color: rgba(0,0,0,0);
 }
 
 li {
@@ -23,6 +15,22 @@ a:hover {
 color: rgba(30,93,129,1);
 }
 
+.background-image {
+    z-index: -1;
+    position: fixed;
+}
+
+.background-image img {
+	height: 1200px;
+}
+
+@media (max-width: 600px) {
+	.background-image img {
+		height: 600px;
+		margin-left: -20%;
+	}
+}
+
 .navbar-default {
 background-color: rgba(30,93,129,1);
 }
@@ -33,6 +41,13 @@ background-color: rgba(30,93,129,1);
 font-size:16px;
 margin-top: 22px;
 color: #333;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.orbitist-s {
+font-size:12px;
+margin-top: 4px;
+color: #999;
 }
 
 .orbitist-brand {
@@ -169,6 +184,8 @@ color: #fff;
 
 .navbar .container {
 max-width: 1170px;
+padding-left: 20px;
+padding-right: 15px;
 }
 
 .hidden {
