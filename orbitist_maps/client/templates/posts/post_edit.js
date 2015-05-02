@@ -11,7 +11,8 @@ Template.postEdit.events({
       image: $(e.target).find('[name=image]').val(),
       geojson: $(e.target).find('[name=geojson]').val(),
       tileLayer: $(e.target).find('[name=tileLayer]').val(),
-      marker: $(e.target).find('[name=marker]').val()
+      marker: $(e.target).find('[name=marker]').val(),
+      cartodb: $(e.target).find('[name=cartodb]').val()
     }
 
     Posts.update(currentPostId, {$set: postProperties}, function(error) {

@@ -73,6 +73,13 @@ var bounds = L.geoJson(orbitistGeoJson, {
 
 map.fitBounds(bounds);
 
+// Add cartodb layer
+cartodb.createLayer(map, '{{cartodb}}')
+	.addTo(map)
+	.on('done', function(layer) {
+		//do stuff
+	});
+
 </script>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 {{> analytics}}

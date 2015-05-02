@@ -1,4 +1,6 @@
 <template name="postSubmit">
+	<div class="container">
+
   <form class="main form page">
   
 <!-- Title -->
@@ -20,13 +22,15 @@
 <!-- Category -->
     <div class="form-group">
       <label class="control-label" for="category">Category</label>
-      <select multiple name="category" id="category" type="text" value="" placeholder="--Choose a category--" class="form-control">
-  		<option value="science">Science</option>
-  		<option value="history">History</option>
-  		<option value="politics">Politics</option>
-  		<option value="entertainment">Entertainment</option>
-  		<option value="culture">Culture</option>
+      <div class="controls">
+        <select name="category" id="category" type="text" value="" placeholder="--Choose a tile layer--" class="form-control">
+			<option value="science">Science</option>
+			<option value="history">History</option>
+			<option value="politics">Politics</option>
+			<option value="entertainment">Entertainment</option>
+			<option value="culture">Culture</option>
 	  </select>
+	  </div>
 	</div>
     
 <!-- Image -->
@@ -73,7 +77,17 @@
       </div>
     </div>
     
+<!-- CartoDB -->	
+    <div class="form-group">
+      <label class="control-label" for="cartodb">CartoDB api code</label>
+      <div class="controls">
+          <input name="cartodb" id="cartodb" type="text" value="" placeholder="Add a cartodb api code here." class="form-control"/>
+      </div>
+    </div>
+    
     
     <input type="submit" value="Submit" class="btn btn-primary"/>
   </form>
+  
+  </div><!-- container -->
 </template>

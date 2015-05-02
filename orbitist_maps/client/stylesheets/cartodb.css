@@ -1,0 +1,33 @@
+/* Legend */
+.cartodb-legend-stack {
+display:none;
+}
+
+.cartodb-legend {
+display: none;
+}
+
+.wrapper {
+
+}
+
+.category {
+
+}
+
+.cartodb-legend ul li {
+
+}
+
+.legend-title {
+
+}
+
+/* Time slider */
+.cartodb-timeslider {
+display:none;
+}
+
+/* Logo */
+.cartodb-logo {
+}

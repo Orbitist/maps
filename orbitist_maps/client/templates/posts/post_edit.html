@@ -1,4 +1,6 @@
 <template name="postEdit">
+	<div class="container">
+
   <form class="main form page">
   
 <!-- Title -->
@@ -74,9 +76,18 @@
       </div>
     </div>
     
+<!-- CartoDB -->	
+    <div class="form-group">
+      <label class="control-label" for="cartodb">CartoDB api code</label>
+      <div class="controls">
+          <input name="cartodb" id="cartodb" type="text" value="{{cartodb}}" placeholder="Add a cartodb api code here." class="form-control"/>
+      </div>
+    </div>
     
-    <input type="submit" value="Submit" class="btn btn-primary submit"/>
-    <hr/>
-    <a class="btn btn-danger delete" href="#">Delete post</a>
+    
+    <input type="submit" value="Submit" class="btn btn-primary submit"/> <a class="btn btn-danger delete" href="#">Delete post</a>
+    <hr />
   </form>
+  
+  </div><!-- container -->
 </template>

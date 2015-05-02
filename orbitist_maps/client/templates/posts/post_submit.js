@@ -9,7 +9,8 @@ Template.postSubmit.events({
       image: $(e.target).find('[name=image]').val(),
       geojson: $(e.target).find('[name=geojson]').val(),
       tileLayer: $(e.target).find('[name=tileLayer]').val(),
-      marker: $(e.target).find('[name=marker]').val()
+      marker: $(e.target).find('[name=marker]').val(),
+      cartodb: $(e.target).find('[name=cartodb]').val()
     };
 
     Meteor.call('postInsert', post, function(error, result) {

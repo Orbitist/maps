@@ -16,9 +16,10 @@ coffeescript
 accounts-facebook
 accounts-password
 natestrauser:font-awesome
-bevanhunt:leaflet
 bevanhunt:leaflet-spin
 markdown
 herrhelms:meteor-leaflet-markercluster
 spiderable
 fastclick
+luisalmeida:unveil
+pcel:loading
