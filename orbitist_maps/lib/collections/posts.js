@@ -8,7 +8,7 @@ Posts.allow({
 Posts.deny({
   update: function(userId, post, fieldNames) {
     // may only edit the following two fields:
-    return (_.without(fieldNames, 'title', 'description', 'image', 'geojson', 'tileLayer', 'marker').length > 0);
+    return (_.without(fieldNames, 'title', 'description', 'category', 'image', 'geojson', 'tileLayer', 'marker').length > 0);
   }
 });
 
@@ -18,6 +18,7 @@ Meteor.methods({
     check(postAttributes, {
       title: String,
       description: String,
+      category: String,
       image: String,
       geojson: String,
       tileLayer: String,

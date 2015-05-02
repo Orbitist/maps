@@ -7,6 +7,12 @@ Router.configure({
 
 Router.route('/', {name: 'postsList'});
 
+Router.route('/culture', {name: 'postsListCulture'});
+Router.route('/entertainment', {name: 'postsListEntertainment'});
+Router.route('/history', {name: 'postsListHistory'});
+Router.route('/politics', {name: 'postsListPolitics'});
+Router.route('/science', {name: 'postsListScience'});
+
 Router.route('/posts/:_id', {
   name: 'postPage',
   data: function() { return Posts.findOne(this.params._id); }

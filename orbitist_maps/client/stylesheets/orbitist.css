@@ -15,6 +15,10 @@ a:hover {
 color: rgba(30,93,129,1);
 }
 
+p {
+font-size: 18px;
+}
+
 .background-image {
     z-index: -1;
     position: fixed;
@@ -26,7 +30,7 @@ color: rgba(30,93,129,1);
 
 @media (max-width: 600px) {
 	.background-image img {
-		height: 600px;
+		height: 800px;
 		margin-left: -20%;
 	}
 }
@@ -53,6 +57,12 @@ color: #999;
 .orbitist-brand {
 font-family: 'Ubuntu', sans-serif;
 color: rgba(241,194,137,1);
+}
+
+@media screen and (max-width: 767px) {
+  .navbar>.container-fluid .navbar-brand {
+  margin-left: 40px;
+  }
 }
 
 /** Orbitist Buttons **/
@@ -97,7 +107,7 @@ margin-left: 5px;
 /** Back Button **/
 .back-btn {
 position: fixed;
-top: 10px;
+top: 8px;
 left: 10px;
 font-size: 20px !important;
 z-index: 9;
@@ -116,6 +126,19 @@ box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 color: #eee;
 }
 
+.bars-btn {
+position: fixed;
+top: 5px;
+left: 10px;
+font-size: 28px !important;
+z-index: 9;
+padding-left: 9px;
+}
+
+.bars-btn .fa {
+color: #eee;
+}
+
 .fullscreen-toggle {
 position: fixed;
 right: 10px;
@@ -128,7 +151,6 @@ background-color: rgba(241,194,137,0.95);
 }
 
 
-
 /* Logo */
 .orbitist-logo {
 width: 35px;
@@ -138,10 +160,10 @@ margin-bottom: 8px;
 opacity: 1;
 }
 
-.navbar>.container .navbar-brand {
-margin-left: 0px;
+.navbar>.container-fluid .navbar-brand {
 font-family: 'Ubuntu', sans-serif;
 color: rgba(241,194,137,1);
+font-size: 28px;
 }
 
 /* Navbar Buttons */
@@ -182,12 +204,37 @@ color: #fff;
 	}
 }
 
-.navbar .container {
-max-width: 1170px;
+.navbar .container-fluid {
 padding-left: 20px;
 padding-right: 15px;
 }
 
 .hidden {
 display: none;
+}
+
+/** List groups **/
+.list-group-item {
+background-color: rgba(30,93,129,1);
+border-color: rgba(30,93,129,1);
+color: #eee;
+}
+
+.list-group a {
+color: #eee;
+}
+
+.list-group {
+-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/** Loading Page **/
+.loading-page {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(30,93,129,1);
 }

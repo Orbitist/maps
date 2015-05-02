@@ -1,7 +1,7 @@
 <template name="postPage">
 <p class="hidden">{{title}}: {{description}}</p>
 <img class="hidden" src="{{image}}">
-	<a href="{{pathFor 'postsList'}}" data-transition-out="slideRightOut" data-transition-in="slideRightIn">
+	<a href="javascript:history.back()" data-transition-out="slideRightOut" data-transition-in="slideRightIn">
 		<div class="back-btn">
 			<span class="fa fa-chevron-left"></span>
 		</div>
@@ -21,10 +21,10 @@
       </div>
       <div class="modal-body">
         {{#markdown}}{{description}}{{/markdown}}
-		<em><small>Make a map like this one using <a href="http://orbitist.com">Orbitist.com</a>. Powered by <a href="http://leafletjs.com">Leaflet</a>, <a href="https://www.mapbox.com/about/maps/">© Mapbox</a>, <a href="https://www.openstreetmap.org/about">© OpenStreetMap</a>, and <a href="http://maps.stamen.com/">Stamen Design</a>. <a href="https://www.mapbox.com/map-feedback/">Improve this map</a>.</small></em>
+        <small>This map was built with <a href="http://orbitist.com">the Orbitist platform</a>. It is powered by <a href="http://leafletjs.com">Leaflet</a>, <a href="https://www.mapbox.com/about/maps/">© Mapbox</a>, <a href="https://www.openstreetmap.org/about">© OpenStreetMap</a>, and <a href="http://maps.stamen.com/">Stamen Design</a>. <a href="https://www.mapbox.com/map-feedback/">Improve this map</a>.</small><br />
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-orbitist" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

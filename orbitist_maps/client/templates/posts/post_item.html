@@ -1,19 +1,11 @@
 <template name="postItem">
 	<a href="{{pathFor 'postPage'}}" data-transition-out="slideLeftOut" data-transition-in="slideLeftIn">
 	<div class="post-item">
+		<div class="post-image"><img src="{{image}}" class="img-responsive"></div>
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="post-image"><img src="{{image}}" class="img-responsive"></div>
-			</div><!-- col-xs-12 -->
-		</div><!-- row -->
-		<div class="row">
-			<div class="col-xs-10">
-				<div class="orbitist-m post-title">{{title}}</div>
-				<div class="orbitist-s post-description">{{shortIt this.description 300}}</div>
-			</div><!-- col-sm-10 -->
-			<div class="col-xs-2">
-				<div class="orbitist-m"><span class="fa fa-chevron-right pull-right post-arrow" style="margin-top:6px;"></span></div>
-			</div><!-- col-sm-2 -->
+				<div class="orbitist-m post-title">{{shortIt this.title 60}}</div>
+			</div><!-- col-sm-12 -->
 		</div><!-- row -->
 	</div><!-- post-item -->
 	</a>

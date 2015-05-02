@@ -1,29 +1,51 @@
 <template name="postSubmit">
   <form class="main form page">
+  
+<!-- Title -->
     <div class="form-group">
       <label class="control-label" for="title">Title</label>
       <div class="controls">
           <input name="title" id="title" type="text" value="" placeholder="Name your post" class="form-control"/>
       </div>
     </div>
+    
+<!-- Description -->    
     <div class="form-group">
       <label class="control-label" for="description">Description</label>
       <div class="controls">
           <textarea name="description" id="description" type="text" value="" placeholder="Describe your map" class="form-control" rows="3"></textarea>
       </div>
     </div>
+    
+<!-- Category -->
+    <div class="form-group">
+      <label class="control-label" for="category">Category</label>
+      <select multiple name="category" id="category" type="text" value="" placeholder="--Choose a category--" class="form-control">
+  		<option value="science">Science</option>
+  		<option value="history">History</option>
+  		<option value="politics">Politics</option>
+  		<option value="entertainment">Entertainment</option>
+  		<option value="culture">Culture</option>
+	  </select>
+	</div>
+    
+<!-- Image -->
     <div class="form-group">
       <label class="control-label" for="image">Image</label>
       <div class="controls">
           <input name="image" id="image" type="text" value="" placeholder="Add an image URL for this post." class="form-control"/>
       </div>
     </div>
+    
+<!-- GeoJSON -->
     <div class="form-group">
       <label class="control-label" for="geojson">GeoJSON</label>
       <div class="controls">
           <textarea name="geojson" id="geojson" type="text" value="" placeholder="Paste your GeoJSON here" class="form-control" rows="3"></textarea>
       </div>
     </div>
+    
+<!-- Tile Layer -->
     <div class="form-group">
       <label class="control-label" for="tileLayer">Tile Layer</label>
       <div class="controls">
@@ -34,9 +56,13 @@
           	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.if1em1bg/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Satellite</option>
           	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.l3d32kbn/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Comic</option>
           	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.l0op74ap/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Pirate</option>
+          	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.m0hj4159/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Wheatpaste</option>
+          	<option value="http://{s}.tiles.mapbox.com/v4/orbitist.m0hj04oi/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag">Pencil</option>
           </select>
       </div>
     </div>
+    
+<!-- Marker -->
     <div class="form-group">
       <label class="control-label" for="marker">Marker</label>
       <div class="controls">
@@ -46,6 +72,8 @@
           </select>
       </div>
     </div>
+    
+    
     <input type="submit" value="Submit" class="btn btn-primary"/>
   </form>
 </template>
