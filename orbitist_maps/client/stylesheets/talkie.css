@@ -1,0 +1,82 @@
+/******* Audio Controls *******/
+.audio-controls {
+position: fixed;
+z-index: 999999999999;
+background-color: rgba(30,93,129,0.8);
+padding-left: 10px;
+bottom: 0px;
+left: 0px;
+width: 100%;
+}
+
+/*Play button*/
+#songPlay {
+font-size: 25px;
+color: rgba(241,194,137,0.8);
+padding: 10px;
+cursor: pointer;
+}
+#songPlay:hover {
+color: rgba(241,194,137,1);
+}
+
+/*Pause button*/
+#songPause {
+font-size: 25px;
+color: rgba(241,194,137,0.8);
+padding: 10px;
+cursor: pointer;
+}
+#songPause:hover {
+color: rgba(241,194,137,1);
+}
+				/*Stop button*/
+				#songStop{
+
+				}
+/*Play/Pause button*/
+#songPlayPause{
+font-size: 25px;
+color: rgba(241,194,137,0.8);
+padding: 10px;
+cursor: pointer;
+}
+/*Song location slider*/
+#songSlider{
+width: 100%;
+height: 10px;
+background-color: black;
+margin-top: 25px;
+cursor: pointer;
+}
+/*Track progress bar*/
+#trackProgress{
+width: 0;
+height: 10px;
+background-color: rgba(241,194,137,0.8);
+}
+#songTime {
+color: rgba(241,194,137,0.9);
+margin-top: 20px;
+display: none;
+}
+				/*Volume Up Button*/
+				#volumeUp{
+
+				}
+				/*Volume Down Button*/
+				#volumeDown{
+
+				}
+				/*Volume Meter*/
+				#volumeMeter{
+					width: 500px;
+					height: 10px;
+					background-color: black;
+				}
+				/*Volume Location Meter*/
+				#volumeStatus{
+					height: 10px;
+					background-color: green;
+				}
+	
