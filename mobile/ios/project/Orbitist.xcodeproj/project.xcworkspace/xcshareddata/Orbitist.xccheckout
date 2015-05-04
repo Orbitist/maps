@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7B601340-2623-4D7F-AFB0-1BFF8667D3B7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Orbitist</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8F5B6379AFD2EDC585DA24313A0069F47963EEF5</key>
+		<string>https://github.com/Orbitist/maps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>mobile/ios/project/Orbitist.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8F5B6379AFD2EDC585DA24313A0069F47963EEF5</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Orbitist/maps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8F5B6379AFD2EDC585DA24313A0069F47963EEF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8F5B6379AFD2EDC585DA24313A0069F47963EEF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>maps</string>
+		</dict>
+	</array>
+</dict>
+</plist>

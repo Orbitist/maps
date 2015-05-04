@@ -1,11 +1,11 @@
 // This section sets up some basic app metadata,
 // the entire section is optional.
 App.info({
-  id: 'com.example.matt.uber',
-  name: 'Map Roulette',
-  description: 'Learn about the world every day!',
+  id: 'com.orbitist.maps',
+  name: 'Orbitist',
+  description: 'Maps that explain our world. Audio maps, data visualizations and multimedia mixed together to create a new type of storytelling that will blow your mind!',
   author: 'Orbitist',
-  email: 'support@oebitist.com',
+  email: 'support@orbitist.com',
   website: 'http://orbitist.com'
 });
  

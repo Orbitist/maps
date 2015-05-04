@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/10447d8f449b0a32d17fa9d20bbe778eb7313361.css?meteor_css_resource=true">
+
+  <script type="text/javascript">
+    __meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.1.0.2%22%2C%22ROOT_URL%22%3A%22http%3A%2F%2Forbitist-maps-45040.onmodulus.net%2F%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22DDP_DEFAULT_CONNECTION_URL%22%3A%22http%3A%2F%2Forbitist-maps-45040.onmodulus.net%22%2C%22autoupdateVersionCordova%22%3A%227e39c36f97a646245bb9b5f166cddf4c89ee3d91%22%2C%22appId%22%3A%2228pll69zcmn81u4gfvb%22%7D"));
+
+    if (/Android/i.test(navigator.userAgent)) {
+      // When Android app is emulated, it cannot connect to localhost,
+      // instead it should connect to 10.0.2.2
+      // (unless we're using an http proxy; then it works!)
+      if (!__meteor_runtime_config__.httpProxyPort) {
+        __meteor_runtime_config__.ROOT_URL = (__meteor_runtime_config__.ROOT_URL || '').replace(/localhost/i, '10.0.2.2');
+        __meteor_runtime_config__.DDP_DEFAULT_CONNECTION_URL = (__meteor_runtime_config__.DDP_DEFAULT_CONNECTION_URL || '').replace(/localhost/i, '10.0.2.2');
+      }
+    }
+  </script>
+
+  <script type="text/javascript" src="/cordova.js"></script>
+  <script type="text/javascript" src="/24e7feb32bae69e288df4f35c998709646b6b9f7.js"></script>
+
+
+  <meta name="fragment" content="!">
+<title>Orbitist Maps</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Orbitist">
+	<link rel="apple-touch-startup-image" href="http://orbitist.s3.amazonaws.com/_toplevel/images/logos/splash.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="http://orbitist.s3.amazonaws.com/_toplevel/images/logos/1000_illustrated.jpg">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+
+	<!-- CartoDB CSS and JS. Includes Jquery and Leaflet -->
+	<!-- <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" /> -->
+	<script src="http://libs.cartocdn.com/cartodb.js/v3/3.13/cartodb_nojquery.js"></script>
+	
+    	<!-- Talkie by Kiln.it -->
+    	<link rel="stylesheet" type="text/css" href="http://orbitist.s3.amazonaws.com/cdn/talkie-leaflet/talkie.css">
+    	<script src="http://orbitist.s3.amazonaws.com/cdn/talkie-leaflet/talkie.min.js"></script>
+    	<!-- Talkie/Leaflet integration -->
+    	<script src="http://orbitist.s3.amazonaws.com/cdn/talkie-leaflet/talkie-leaflet.js"></script>
+    	
+<script src="http://orbitist.s3.amazonaws.com/cdn/talkie-leaflet/audio.js"></script>
+</head>
+
+<body>
+  
+</body>
+</html>
