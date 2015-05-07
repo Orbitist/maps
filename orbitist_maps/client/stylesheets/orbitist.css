@@ -16,7 +16,7 @@ color: rgba(30,93,129,1);
 }
 
 p {
-font-size: 18px;
+font-size: 16px;
 }
 
 .background-image {
@@ -113,10 +113,52 @@ font-size: 20px !important;
 z-index: 9;
 width: 36px;
 height: 36px;
-background-color: rgba(30,93,129,0.8);
+background-color: rgba(30,93,129,0.9);
 border-radius: 50%;
 border-color: rgba(241,194,137,0.8);
 padding-left: 9px;
+padding-top: 5px;
+-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.info-btn .fa {
+color: #666;
+}
+
+.info-btn {
+position: fixed;
+top: 8px;
+right: 10px;
+font-size: 20px !important;
+z-index: 9;
+width: 36px;
+height: 36px;
+background-color: rgba(241,194,137,0.9);
+border-radius: 50%;
+border-color: rgba(241,194,137,0.8);
+padding-left: 15px;
+padding-top: 5px;
+-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.legend-btn .fa {
+color: #eee;
+}
+
+.legend-btn {
+position: fixed;
+top: 8px;
+right: 50px;
+font-size: 20px !important;
+z-index: 9;
+width: 36px;
+height: 36px;
+background-color: rgba(30,93,129,0.9);
+border-radius: 50%;
+border-color: rgba(241,194,137,0.8);
+padding-left: 8px;
 padding-top: 5px;
 -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 box-shadow: 1px 1px 2px rgba(0,0,0,0.2);

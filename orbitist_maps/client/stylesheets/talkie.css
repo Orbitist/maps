@@ -2,7 +2,7 @@
 .audio-controls {
 position: fixed;
 z-index: 999999999999;
-background-color: rgba(30,93,129,0.8);
+background-color: rgba(30,93,129,0.9);
 padding-left: 10px;
 bottom: 0px;
 left: 0px;

@@ -1,15 +1,27 @@
 <template name="postPage">
 <p class="hidden">{{title}}: {{description}}</p>
 <img class="hidden" src="{{image}}">
-	<a href="javascript:history.back()" data-transition-out="slideRightOut" data-transition-in="slideRightIn">
+	<a href="/" data-transition-out="slideRightOut" data-transition-in="slideRightIn">
 		<div class="back-btn">
 			<span class="fa fa-chevron-left"></span>
 		</div>
 	</a>
 	
-<div class="fullscreen-toggle">
-     <button type="button" class="btn btn-sm btn-default btn-orbitist" data-toggle="modal" data-target="#myModal"><span class="fa fa-list-ul"></span> Info</button>
-</div><!-- fullscreen-toggle -->
+
+     <a href="#" data-toggle="modal" data-target="#myModal">
+     	<div class="info-btn">
+     		<span class="fa fa-info"></span>
+     	</div>
+     </a>
+
+{{#if cartodb}}
+     <a href="#" data-toggle="toggleLegend">
+     	<div class="legend-btn">
+     		<span class="fa fa-list-alt"></span>
+     	</div>
+     </a>
+{{/if}}
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -21,7 +33,7 @@
       </div>
       <div class="modal-body">
         {{#markdown}}{{description}}{{/markdown}}
-        <small>This map was built with <a href="http://orbitist.com">the Orbitist platform</a>. It is powered by <a href="http://leafletjs.com">Leaflet</a>, <a href="https://www.mapbox.com/about/maps/">© Mapbox</a>, <a href="https://www.openstreetmap.org/about">© OpenStreetMap</a>, and <a href="http://maps.stamen.com/">Stamen Design</a>. <a href="https://www.mapbox.com/map-feedback/">Improve this map</a>.</small><br />
+        <small>This map was built with <a href="http://orbitist.com">the Orbitist platform</a>. It is powered by <a href="http://leafletjs.com">Leaflet</a>, <a href="https://www.mapbox.com/about/maps/">© Mapbox</a>, <a href="https://www.openstreetmap.org/about">© OpenStreetMap</a>, and <a href="http://maps.stamen.com/">Stamen Design</a>. Data visualizations are powered by <a href="http://catrodb.com">CartoDB</a>. <a href="https://www.mapbox.com/map-feedback/">Improve this map</a>.</small>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -135,6 +147,16 @@ cartodb.createLayer(map, '{{cartodb}}')
   // If we don’t call this, then the scripted setViews will still work but
   // user changes will not pause the timeline or be reverted.
    tl.undoViewChanges(timeline);
+</script>
+{{/if}}
+
+{{#if cartodb }}
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="toggleLegend"]').click(function () {
+      $('.cartodb-legend-stack').toggleClass('active')
+    });
+  });
 </script>
 {{/if}}
 
