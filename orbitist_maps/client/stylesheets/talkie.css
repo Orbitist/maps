@@ -1,7 +1,7 @@
 /******* Audio Controls *******/
 .audio-controls {
 position: fixed;
-z-index: 999999999999;
+z-index: 9;
 background-color: rgba(30,93,129,0.9);
 padding-left: 10px;
 bottom: 0px;
@@ -56,11 +56,9 @@ opacity: 0.0
     50% {opacity: 1;}
     100% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
 }
-
-				/*Stop button*/
-				#songStop{
-
-				}
+/*Stop button*/
+#songStop{
+}
 /*Play/Pause button*/
 #songPlayPause{
 font-size: 25px;
