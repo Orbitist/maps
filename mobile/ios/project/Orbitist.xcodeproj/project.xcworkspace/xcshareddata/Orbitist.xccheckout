@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7B601340-2623-4D7F-AFB0-1BFF8667D3B7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Orbitist</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8F5B6379AFD2EDC585DA24313A0069F47963EEF5</key>
 		<string>https://github.com/Orbitist/maps.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>mobile/ios/project/Orbitist.xcodeproj</string>
+	<string>mobile/ios/project/Orbitist.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8F5B6379AFD2EDC585DA24313A0069F47963EEF5</key>
