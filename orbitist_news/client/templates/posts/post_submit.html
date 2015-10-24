@@ -1,0 +1,42 @@
+<template name="postSubmit">
+	<div class="container">
+
+  <form class="main form page">
+  
+<!-- Title -->
+    <div class="form-group">
+      <label class="control-label" for="title">Title</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="" placeholder="Name your post" class="form-control"/>
+      </div>
+    </div>
+    
+<!-- Description -->    
+    <div class="form-group">
+      <label class="control-label" for="description">Description</label>
+      <div class="controls">
+          <textarea name="description" id="description" type="text" value="" placeholder="Describe your map" class="form-control" rows="3"></textarea>
+      </div>
+    </div>
+    
+<!-- Image -->
+    <div class="form-group">
+      <label class="control-label" for="image">Image</label>
+      <div class="controls">
+          <input name="image" id="image" type="text" value="" placeholder="Add an image URL for this post." class="form-control"/>
+      </div>
+    </div>
+  
+<!-- Map ID -->
+    <div class="form-group">
+      <label class="control-label" for="mapid">Map ID</label>
+      <div class="controls">
+          <input name="mapid" id="mapid" type="text" value="" placeholder="Enter an Orbitist Map ID" class="form-control"/>
+      </div>
+    </div>
+  
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+  
+  </div><!-- container -->
+</template>

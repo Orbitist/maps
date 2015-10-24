@@ -1,0 +1,44 @@
+<template name="postEdit">
+	<div class="container">
+
+  <form class="main form page">
+  
+<!-- Title -->
+    <div class="form-group">
+      <label class="control-label" for="title">Title</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="{{title}}" placeholder="Name your post" class="form-control"/>
+      </div>
+    </div>
+    
+<!-- Description -->
+    <div class="form-group">
+      <label class="control-label" for="description">Description</label>
+      <div class="controls">
+          <textarea name="description" id="description" type="text" value="{{description}}" placeholder="Describe your map!" class="form-control" rows="20"></textarea>
+      </div>
+    </div>
+	
+<!-- Image -->	
+    <div class="form-group">
+      <label class="control-label" for="image">Image</label>
+      <div class="controls">
+          <input name="image" id="image" type="text" value="{{image}}" placeholder="Place an image URL here." class="form-control"/>
+      </div>
+    </div>
+    
+<!-- Map ID -->	
+    <div class="form-group">
+      <label class="control-label" for="mapid">Map ID</label>
+      <div class="controls">
+          <input name="mapid" id="mapid" type="text" value="{{mapid}}" placeholder="Enter an Orbitist Map ID" class="form-control"/>
+      </div>
+    </div>
+
+    
+    <input type="submit" value="Submit" class="btn btn-primary submit"/> <a class="btn btn-danger delete" href="#">Delete post</a>
+    <hr />
+  </form>
+  
+  </div><!-- container -->
+</template>
