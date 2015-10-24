@@ -1,2 +1,2 @@
-# maps
-Our Orbitist maps app
+# Orbitist News
+Our Orbitist news app
