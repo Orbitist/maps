@@ -1,26 +1,9 @@
 <template name="postsList">
-
-{{> sidebar}}
-
-	<div class="background-image"><img src="http://orbitist.s3.amazonaws.com/_toplevel/images/backgrounds/cover.jpg"></div>
-	<div class="posts-list">
-		{{> header}}	
-			<div class="col-xs-12 col-sm-9">
-				{{#each posts}}
-					{{> postItem}}
-				{{/each}}
-			</div><!-- col-xs-12 col-sm-9 -->
-	</div><!-- posts-list -->
-	
-
-
-	
-<script>
-  $(document).ready(function () {
-    $('[data-toggle="offcanvas"]').click(function () {
-      $('.sidebar-offcanvas').toggleClass('active')
-    });
-  });
-</script>
-		{{> analytics}}
+	{{> navbar}}	
+	<div class="col-xs-12 col-sm-9">
+		{{#each posts}}
+			{{> postItem}}
+		{{/each}}
+	</div><!-- col-xs-12 col-sm-9 -->
+	{{> analytics}}
 </template>

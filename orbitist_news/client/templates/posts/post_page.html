@@ -1,9 +1,27 @@
 <template name="postPage">
-<p class="hidden">{{title}}: {{description}}</p>
-<img class="hidden" src="{{image}}">
 
 <!-- map -->
 <div class="map" id="map"></div>
+
+<!-- map info button -->
+<div class="fullscreen-toggle z10">
+		<button type="button" class="map-button btnmapinfo"><i class="fa fa-info-circle"></i> Info</button>
+</div><!-- fullscreen-toggle -->
+
+<!-- Story Slide -->
+<div class="story-slide z20 in">
+	<button type="button" class="map-button btnmapinfo btnmapinfo-close in" aria-label="Close"><i class="fa fa-times"></i></button>
+	<div class="mapinfo"></div>
+	<div class="explore-container">
+		<button type="button" class="map-button btn-explore btnmapinfo" data-dismiss="modal">Explore <i class="fa fa-long-arrow-right"></i></button>
+	</div><!-- explore-container -->
+</div><!-- story-slide -->
+
+<!-- Home Button -->
+<a href="/" class="home-button z10"><img src="http://orbitist.s3.amazonaws.com/_toplevel/images/logos/orbitist.png" width="20px"> Orbitist News</a>
+
+<!-- Orbitist Custom scripts -->
+<script src="https://app.orbitist.com/launch/cdn/orbitist-js/custom.js"></script>
 		
 <script>
 // Get mapid from the URL query string
