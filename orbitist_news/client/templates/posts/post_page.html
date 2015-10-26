@@ -106,7 +106,7 @@
 	function orbitistPopup(feature, layer) {
 			// does this feature have a property named popupContent?
 			if (feature.properties && feature.properties.name) {
-					layer.bindPopup(feature.properties.description, {closeButton: false});
+					layer.bindPopup(feature.properties.description, {closeButton: true});
 			}
 	}
 
@@ -145,6 +145,16 @@
 		});
 	});
 	</script>
+
+  <!-- Deal with Tweets -->
+	<script>
+		$(".leaflet-marker-icon").click(function(){
+			 setTimeout(function() {
+					twttr.widgets.load()
+			 }, 100);
+		});
+	</script>
+	<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	
 	{{> analytics}}
 </template>
