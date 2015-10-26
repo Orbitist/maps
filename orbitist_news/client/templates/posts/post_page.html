@@ -1,5 +1,10 @@
 <template name="postPage">
 
+	<!-- Hidden content for Facebook scraping -->
+	<p class="hidden">{{ title }}: {{ description }}</p>
+	<img class="hidden" src="{{ image }}">
+	
+
 	<!-- Spinner -->
 	<div class="spinner">
 		<div class="sk-spinner sk-spinner-pulse"></div>
@@ -148,7 +153,7 @@
 
   <!-- Deal with Tweets -->
 	<script>
-		$(".leaflet-marker-icon").click(function(){
+		$(".leaflet-marker-icon").on('click touch',function(){
 			 setTimeout(function() {
 					twttr.widgets.load()
 			 }, 100);
