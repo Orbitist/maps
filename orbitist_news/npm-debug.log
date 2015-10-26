@@ -1,0 +1,306 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'modulus' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'modulus', null ]
+7 verbose cache add spec modulus
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'modulus',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'modulus',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed modulus@*
+10 verbose addNamed "*" is a valid semver range for modulus
+11 silly addNameRange { name: 'modulus', range: '*', hasData: false }
+12 silly mapToRegistry name modulus
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/modulus
+16 verbose addNameRange registry:https://registry.npmjs.org/modulus not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/modulus
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 1:57:44 PM
+20 verbose request id 577df2b608f83a56
+21 http request GET https://registry.npmjs.org/modulus
+22 http 200 https://registry.npmjs.org/modulus
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"5UC1DX58UUPOEB1U8N36OLLXA"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'cache-control': 'max-age=60',
+23 verbose headers   'content-length': '182202',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Sun, 25 Oct 2015 17:57:45 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-atl6234-ATL',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '1',
+23 verbose headers   'x-timer': 'S1445795865.215988,VS0,VE92',
+23 verbose headers   vary: 'Accept' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"5UC1DX58UUPOEB1U8N36OLLXA"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '182202',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Sun, 25 Oct 2015 17:57:45 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-atl6234-ATL',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1445795865.215988,VS0,VE92',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving modulus to /Users/ngunner/.npm/registry.npmjs.org/modulus/.cache.json
+26 verbose makeDirectory /Users/ngunner/.npm creation not in flight; initializing
+27 silly makeDirectory /Users/ngunner/.npm uid: 501 gid: 20
+28 silly addNameRange number 2 { name: 'modulus', range: '*', hasData: true }
+29 silly addNameRange versions [ 'modulus',
+29 silly addNameRange   [ '0.0.1',
+29 silly addNameRange     '0.0.2',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.0.4',
+29 silly addNameRange     '0.0.5',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.4',
+29 silly addNameRange     '0.1.5',
+29 silly addNameRange     '0.1.6',
+29 silly addNameRange     '0.1.7',
+29 silly addNameRange     '0.1.8',
+29 silly addNameRange     '0.1.9',
+29 silly addNameRange     '0.1.10',
+29 silly addNameRange     '0.1.11',
+29 silly addNameRange     '0.1.12',
+29 silly addNameRange     '0.1.13',
+29 silly addNameRange     '0.1.14',
+29 silly addNameRange     '0.1.14-2',
+29 silly addNameRange     '0.1.15',
+29 silly addNameRange     '0.1.16',
+29 silly addNameRange     '0.1.17',
+29 silly addNameRange     '0.1.18',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.2.2-1',
+29 silly addNameRange     '0.2.2-2',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.5.1',
+29 silly addNameRange     '0.6.2',
+29 silly addNameRange     '0.6.3',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.0.1',
+29 silly addNameRange     '1.0.2',
+29 silly addNameRange     '1.0.3',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '1.2.2',
+29 silly addNameRange     '2.0.0',
+29 silly addNameRange     '2.0.1',
+29 silly addNameRange     '2.0.2',
+29 silly addNameRange     '2.1.0',
+29 silly addNameRange     '3.0.0',
+29 silly addNameRange     '3.0.1',
+29 silly addNameRange     '3.0.2',
+29 silly addNameRange     '3.0.3',
+29 silly addNameRange     '3.0.4',
+29 silly addNameRange     '3.0.5',
+29 silly addNameRange     '3.1.0',
+29 silly addNameRange     '3.2.0',
+29 silly addNameRange     '3.2.1',
+29 silly addNameRange     '3.3.0',
+29 silly addNameRange     '3.4.0',
+29 silly addNameRange     '3.4.1',
+29 silly addNameRange     '3.4.2',
+29 silly addNameRange     '3.5.0',
+29 silly addNameRange     '3.5.1',
+29 silly addNameRange     '3.6.0',
+29 silly addNameRange     '3.6.1',
+29 silly addNameRange     '3.6.2',
+29 silly addNameRange     '3.6.3',
+29 silly addNameRange     '3.7.0',
+29 silly addNameRange     '3.7.1',
+29 silly addNameRange     '3.7.2',
+29 silly addNameRange     '3.7.3',
+29 silly addNameRange     '3.8.0',
+29 silly addNameRange     '3.9.0',
+29 silly addNameRange     '3.10.0',
+29 silly addNameRange     '3.10.1',
+29 silly addNameRange     '3.10.2',
+29 silly addNameRange     '3.10.3',
+29 silly addNameRange     '3.11.0',
+29 silly addNameRange     '3.11.1',
+29 silly addNameRange     '3.13.0',
+29 silly addNameRange     '3.13.1',
+29 silly addNameRange     '3.13.2',
+29 silly addNameRange     '3.13.3',
+29 silly addNameRange     '3.13.4',
+29 silly addNameRange     '3.14.0',
+29 silly addNameRange     '3.14.1',
+29 silly addNameRange     '3.15.0',
+29 silly addNameRange     '3.15.1',
+29 silly addNameRange     '4.0.0',
+29 silly addNameRange     '4.0.1',
+29 silly addNameRange     '4.0.2',
+29 silly addNameRange     '5.0.0',
+29 silly addNameRange     '5.0.1-beta.1',
+29 silly addNameRange     '5.0.1-beta.2',
+29 silly addNameRange     '5.0.1-beta.3',
+29 silly addNameRange     '5.0.1-beta.4',
+29 silly addNameRange     '5.0.1' ] ]
+30 silly addNamed modulus@5.0.1
+31 verbose addNamed "5.0.1" is a plain semver version for modulus
+32 silly mapToRegistry name modulus
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/modulus
+36 verbose addRemoteTarball https://registry.npmjs.org/modulus/-/modulus-5.0.1.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/modulus/-/modulus-5.0.1.tgz',
+37 verbose addRemoteTarball   'eea2529543ab873201935c7ca72ff62e5beaa10d' ]
+38 info retry fetch attempt 1 at 1:57:45 PM
+39 info attempt registry request try #1 at 1:57:45 PM
+40 http fetch GET https://registry.npmjs.org/modulus/-/modulus-5.0.1.tgz
+41 http fetch 200 https://registry.npmjs.org/modulus/-/modulus-5.0.1.tgz
+42 silly fetchAndShaCheck shasum eea2529543ab873201935c7ca72ff62e5beaa10d
+43 verbose addTmpTarball /var/folders/pc/pn1g1mxs0_lf8st6mkp08v9c0000gn/T/npm-11651-0f9f3198/registry.npmjs.org/modulus/-/modulus-5.0.1.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for modulus@5.0.1
+45 silly cache afterAdd modulus@5.0.1
+46 verbose afterAdd /Users/ngunner/.npm/modulus/5.0.1/package/package.json not in flight; writing
+47 verbose afterAdd /Users/ngunner/.npm/modulus/5.0.1/package/package.json written
+48 silly install resolved [ { name: 'modulus',
+48 silly install resolved     description: 'The command line interface for deploying applications to the Modulus hosting platform.',
+48 silly install resolved     keywords:
+48 silly install resolved      [ 'cli',
+48 silly install resolved        'modulus',
+48 silly install resolved        'hosting',
+48 silly install resolved        'cloud hosting',
+48 silly install resolved        'paas',
+48 silly install resolved        'platform-as-a-service',
+48 silly install resolved        'deployment',
+48 silly install resolved        'deploy',
+48 silly install resolved        'command line',
+48 silly install resolved        'modulusio' ],
+48 silly install resolved     version: '5.0.1',
+48 silly install resolved     author: { name: 'Modulus', email: 'feedback@modulus.io' },
+48 silly install resolved     maintainers:
+48 silly install resolved      [ [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object] ],
+48 silly install resolved     repository:
+48 silly install resolved      { type: 'git',
+48 silly install resolved        url: 'git+https://github.com/onmodulus/modulus-cli.git' },
+48 silly install resolved     licenses: [ [Object] ],
+48 silly install resolved     dependencies:
+48 silly install resolved      { async: '0.1.x',
+48 silly install resolved        colors: '0.6.x',
+48 silly install resolved        'commander-plus': '0.0.x',
+48 silly install resolved        demeteorizer: '3.x.x',
+48 silly install resolved        'find-file-sync': '0.0.2',
+48 silly install resolved        'fs-tools': '~0.2.10',
+48 silly install resolved        'fstream-ignore': '0.0.x',
+48 silly install resolved        'node-uuid': '1.3.3',
+48 silly install resolved        progress: '0.1.x',
+48 silly install resolved        prompt: '0.2.x',
+48 silly install resolved        request: '2.27.x',
+48 silly install resolved        split: '0.3.0',
+48 silly install resolved        'text-table': '0.2.0',
+48 silly install resolved        through: '2.3.4',
+48 silly install resolved        underscore: '1.4.x',
+48 silly install resolved        'update-notifier': '~0.1.7',
+48 silly install resolved        'zip-stream': '0.5.1' },
+48 silly install resolved     devDependencies: { mocha: '1.5.x', express: '3.0.x' },
+48 silly install resolved     main: './lib/modulus',
+48 silly install resolved     bin: { modulus: './bin/modulus' },
+48 silly install resolved     preferGlobal: true,
+48 silly install resolved     engines: { node: '>= 0.8.0' },
+48 silly install resolved     scripts: {},
+48 silly install resolved     gitHead: '77d7fa18375ac33aee72159a4f0cffd10dc3ece6',
+48 silly install resolved     bugs: { url: 'https://github.com/onmodulus/modulus-cli/issues' },
+48 silly install resolved     homepage: 'https://github.com/onmodulus/modulus-cli#readme',
+48 silly install resolved     _id: 'modulus@5.0.1',
+48 silly install resolved     _shasum: 'eea2529543ab873201935c7ca72ff62e5beaa10d',
+48 silly install resolved     _from: 'modulus@*',
+48 silly install resolved     _npmVersion: '3.3.4',
+48 silly install resolved     _nodeVersion: '4.1.0',
+48 silly install resolved     _npmUser: { name: 'fiveisprime', email: 'matt@modulus.io' },
+48 silly install resolved     dist:
+48 silly install resolved      { shasum: 'eea2529543ab873201935c7ca72ff62e5beaa10d',
+48 silly install resolved        tarball: 'http://registry.npmjs.org/modulus/-/modulus-5.0.1.tgz' },
+48 silly install resolved     directories: {},
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/modulus/-/modulus-5.0.1.tgz' } ]
+49 info install modulus@5.0.1 into /usr/local/lib
+50 info installOne modulus@5.0.1
+51 verbose installOne of modulus to /usr/local/lib not in flight; installing
+52 verbose makeDirectory /Users/ngunner/.npm/_locks creation not in flight; initializing
+53 silly makeDirectory /Users/ngunner/.npm/_locks uid: 501 gid: 20
+54 verbose lock using /Users/ngunner/.npm/_locks/modulus-73bdd4db349978f1.lock for /usr/local/lib/node_modules/modulus
+55 silly install write writing modulus 5.0.1 to /usr/local/lib/node_modules/modulus
+56 verbose unbuild lib/node_modules/modulus
+57 silly gentlyRm /usr/local/lib/node_modules/modulus is being purged from base /usr/local
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/modulus
+59 verbose tar unpack /Users/ngunner/.npm/modulus/5.0.1/package.tgz
+60 verbose tar unpacking to /usr/local/lib/node_modules/modulus
+61 silly gentlyRm /usr/local/lib/node_modules/modulus is being purged
+62 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/modulus
+63 silly gunzTarPerm modes [ '755', '644' ]
+64 error tar.unpack untar error /Users/ngunner/.npm/modulus/5.0.1/package.tgz
+65 verbose unlock done using /Users/ngunner/.npm/_locks/modulus-73bdd4db349978f1.lock for /usr/local/lib/node_modules/modulus
+66 verbose fstream_path /usr/local/lib/node_modules/modulus
+67 verbose fstream_type Directory
+68 verbose fstream_class DirWriter
+69 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/modulus'
+69 verbose stack     at Error (native)
+70 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+70 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+70 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+71 verbose cwd /Users/ngunner/Desktop/news/orbitist_news
+72 error Darwin 14.5.0
+73 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "modulus"
+74 error node v4.2.1
+75 error npm  v2.14.7
+76 error path /usr/local/lib/node_modules/modulus
+77 error code EACCES
+78 error errno -13
+79 error syscall mkdir
+80 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/modulus'
+80 error     at Error (native)
+80 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/modulus']
+80 error   errno: -13,
+80 error   code: 'EACCES',
+80 error   syscall: 'mkdir',
+80 error   path: '/usr/local/lib/node_modules/modulus',
+80 error   fstream_type: 'Directory',
+80 error   fstream_path: '/usr/local/lib/node_modules/modulus',
+80 error   fstream_class: 'DirWriter',
+80 error   fstream_stack:
+80 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+80 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+80 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+81 error Please try running this command again as root/Administrator.
+82 verbose exit [ -13, true ]
+83 verbose unbuild lib/node_modules/modulus
+84 silly gentlyRm /usr/local/lib/node_modules/modulus is being purged from base /usr/local
+85 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/modulus

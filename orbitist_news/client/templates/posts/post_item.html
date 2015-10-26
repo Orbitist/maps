@@ -1,12 +1,13 @@
 <template name="postItem">
-	<a href="{{pathFor 'postPage'}}" data-transition-out="slideLeftOut" data-transition-in="slideLeftIn">
-	<div class="post-item">
-		<div class="post-image"><img src="{{image}}" class="img-responsive"></div>
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="orbitist-m post-title">{{shortIt this.title 60}}</div>
-			</div><!-- col-sm-12 -->
-		</div><!-- row -->
-	</div><!-- post-item -->
-	</a>
+	<div class="row">
+		<div class="col-sm-3">
+			<a href="{{pathFor 'postPage'}}"><img src="{{ image }}" class="img-responsive img-rounded"></a>
+		</div><!-- /.col-sm-3 -->
+		<div class="col-sm-9">
+			<a href="{{pathFor 'postPage'}}"><h2>{{ title }}</h2></a>
+			<p class="lead">{{ description }}</p> 
+			<a href="{{pathFor 'postPage'}}" class="btn btn-default pull-right"><span class="fa fa-globe"></span> View map</a>
+		</div><!-- /.col-sm-9 -->
+	</div><!-- /.row -->
+	<hr>
 </template>
